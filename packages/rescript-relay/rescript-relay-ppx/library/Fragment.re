@@ -41,6 +41,7 @@ let make =
         ),
         [
           [%stri module Operation = [%m moduleIdentFromGeneratedModule([])]],
+          [%stri let node = [%e valFromGeneratedModule(["node"])]],
           [%stri
             /**React hook for getting the data of this fragment. Pass the `fragmentRefs` of any object where you've spread your fragment into this and get the fragment data back.
 

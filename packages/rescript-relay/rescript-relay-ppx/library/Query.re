@@ -14,6 +14,7 @@ let make = (~loc, ~moduleName, ~hasRawResponseType) => {
       [%stri [@ocaml.warning "-32-34-60"]],
       [%stri include [%m moduleIdentFromGeneratedModule(["Utils"])]],
       [%stri module Operation = [%m moduleIdentFromGeneratedModule([])]],
+      [%stri let node = [%e valFromGeneratedModule(["node"])]],
       [%stri module Types = [%m moduleIdentFromGeneratedModule(["Types"])]],
       [%stri
         %private
